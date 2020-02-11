@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+		<title>Cadastro Produtos - SisPizza</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	    <script src="https://kit.fontawesome.com/5fde3773aa.js" crossorigin="anonymous"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Literata|Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand{-sm|-md|-lg|-xl} navbar-dark">
+				<p class="navbar-brand" href="#"><img src="img/slice.png" width="30" height="30" class="d-inline-block align-top mt-1" alt="pizza"> SisPizza</p>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
+			  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+					    <li class="nav-item">
+					    	<a class="nav-link" href="index.html">Home</a>
+					    </li>
+					    <li class="nav-item">
+					      	<a class="nav-link" href="order.html">Pedidos</a>
+					    </li>
+					    <li class="nav-item">
+					      	<a class="nav-link" href="clientRegister.html">Clientes</a>
+					    </li>
+					    <li class="nav-item">
+					      	<a class="nav-link" href="productRegister.html">Produtos</a>
+					  	</li>
+				    </ul>
+				</div>
+			</nav>
+		</header>
+		<main class="py-5">
+		    <form class="container">
+				<div class="col-7 form-row" >
+					<div class="form-group col-auto mx-2">
+						<label for="inputProductId">Produto Id</label>
+						<input type="text" class="form-control" id="inputProductId" readonly="">
+					</div>
+					<div class="col-auto form-group inline mx-2">
+						<label for="inputName">Nome</label>
+						<input type="text" id="inputName" class="form-control" required>
+					</div>					
+				</div>
+				<div class="col-7 form-row">
+					<div class="col-auto form-group mx-2">
+						<label for="inputIngredients">Ingredientes</label>
+						<input type="text" class="form-control" id="inputIngredients" required>
+					</div>
+					<div class="col-auto form-group mx-2">
+						<label for="inputPrice">Preço </label>
+						<input type="text" class="form-control" id="inputPrice" placeholder="00.00" required maxlength="6">
+					</div>
+				</div>
+				<div class="mx-2 my-5 botoes-registro">
+					<input class="btn btn-secondary" id="registerProduct" type="submit" value="Cadastrar">
+					<input class="btn btn-secondary" id="clear" type="submit" value="Limpar">
+					<input class="btn btn-secondary"type="submit" value="Deletar">
+					<input class="btn btn-secondary" id="searchProductToList" type="submit" value="Pesquisar">
+				</div>
+			</form>
+		</main>
+		<footer >
+            <div class="rodape-superior"></div>
+            <div class="row container-flex mx-5">
+                <div class=" col-sm-4 container text-center">
+                    <h3 class="mb-3">Nos Siga</h3>
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <div class=" col-sm-4 text-center">
+                    <h3>Sobre Nós</h3>
+                    <p>Somos uma empresa de manutenção e produção de software que tem como objetivo de trazer agilidade e tecnologia para dentro de sua empresa.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3 class="text-center">Se Inscreva</h3>
+                    <div class="inline">
+	                    <p>Increva-se no nosso Feed para receber novidades</p>
+	                    <input type="email" name="" placeholder="name@email.com">
+	                    <button class="btn btn-secondary rounded-circle">&#9166;</button>
+                	</div>
+                </div>
+            </div>
+            <p class=" text-center mt-1 copyright">&copy; Copyright SisPizza - 2019</p>
+        </footer>
+        <script type="text/javascript" src="js/validacaoProduto.js"></script>
+        <script type="text/javascript" src="js/registrarProduto.js"></script>
+   		<script src="bootstrap/jquery-3.4.1.min.js"></script>
+    	<script src="bootstrap/popper.min.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

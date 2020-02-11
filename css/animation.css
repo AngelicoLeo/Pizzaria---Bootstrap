@@ -1,0 +1,18 @@
+h3{
+  animation: type 3s;
+  overflow: hidden;
+  
+}
+.card-group{
+  animation: type 7s;
+  overflow: hidden;
+
+}
+@keyframes type{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

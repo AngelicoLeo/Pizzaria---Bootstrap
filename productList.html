@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+        <title>Pesquisar Produtos - SisPizza</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/5fde3773aa.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Literata|Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body >
+        <header>
+            <nav class="navbar navbar-expand{-sm|-md|-lg|-xl} navbar-dark">
+                <p class="navbar-brand" href="#"><img src="img/slice.png" width="30" height="30" class="d-inline-block align-top mt-1" alt="pizza"> SisPizza</p>
+                <button class="navbar-toggler btn btn-secondary" id="return" type="button"> &#8617; </button>
+                
+            </nav>
+        </header>
+
+        <main class="py-5 container">
+            <div class="pesquisa my-2">
+                <label for="inputSearch" >Pesquisar</label>
+                <input class="mx-2" type="text" name="inputSearch">
+                <button id="searchProduct"class="btn btn-secondary"type="submit"> Pesquisar</button>
+            </div>
+            <div class="table-responsive-sm">
+                <table class="table w-75">
+                        <thead class="thead" id="cabecalho">
+                            <tr>
+                              <th scope="col">Produto Id</th>
+                              <th scope="col">Nome</th>
+                              <th scope="col">Ingredientes</th>
+                              <th scope="col">Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                       </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="rodape-superior mb-5"></div>
+            <div class="row mx-5">
+                <div class=" col-sm-4 text-center">
+                    <h3 class="mb-3">Nos Siga</h3>
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <div class=" col-sm-4 text-center">
+                    <h3>Sobre Nós</h3>
+                    <p>Somos uma empresa de manutenção e produção de software que tem como objetivo de trazer agilidade e tecnologia para dentro de sua empresa.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3 class="text-center">Se Inscreva</h3>
+                    <div class="inline">
+                        <p>Increva-se no nosso Feed para receber novidades</p>
+                        <input type="email" name="" placeholder="name@email.com">
+                        <button class="btn btn-secondary rounded-circle">&#9166;</button>
+                    </div>
+                </div>
+            </div>
+            <p class=" text-center mt-1 copyright">&copy; Copyright SisPizza - 2019</p>
+        </footer>
+
+        <script type="text/javascript" src="js/pesquisaProduto.js"></script>
+        <script src="bootstrap/jquery-3.4.1.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
